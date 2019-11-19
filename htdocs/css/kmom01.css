@@ -22,11 +22,17 @@
 .rm-navbar-max {
     display: none;
 }
+
+html {
+    background-color: #181733;
+}
 /* Container */
 
 .wrap-all {
-    background-color: grey;
-    overflow: auto;
+    background-color: white;
+    overflow: none;
+    width: 80%;
+    margin: auto;
 }
 
 .outer-wrap {
@@ -75,7 +81,7 @@
 
 /* Footer */
 .outer-wrap-footer {
-    background-color: #009;
+    background-color: #181733;
     color: white;
 }
 
