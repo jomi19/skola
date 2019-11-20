@@ -16,10 +16,10 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Om sidan
 =========================
 
 
-[FIGURE src=image/webdesign.png?w=300]
+[FIGURE src=image/webdesign.png?w=300 alt=designbild]
 
 Webdesign kurs på bth hösten 2019
