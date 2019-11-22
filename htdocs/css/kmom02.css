@@ -5124,7 +5124,6 @@ figure.figure.right {
 .toc {
   list-style-type: none;
   padding-top: 1em;
-  overflow: none;
 }
 .toc li {
   padding-top: 0.5em;
