@@ -1,0 +1,28 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #181733;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: serif;
+
+ /* Poor-mans normalize */ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+    color: @colorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}

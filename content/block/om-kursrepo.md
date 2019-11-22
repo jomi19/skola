@@ -1,3 +1,3 @@
 #### Kursrepo
 
-Webdesign kurs från bth [kursens hemsida på dbwebb.se](https://dbwebb.se/kurser/design-v2) och till [kursrepot på GitHub](https://github.com/mosbth/designv2).
+Webdesign kurs från bth [kursens hemsida på dbwebb.se](https://dbwebb.se/kurser/design-v2) och till [kursrepot på GitHub](https://github.com/dbwebb-se/design).
