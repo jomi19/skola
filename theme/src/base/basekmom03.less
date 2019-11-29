@@ -4,7 +4,7 @@
 @bgColorHtml: #181733;
 @bgColorBody: #fff;
 @colorBody: #333;
-@fontFamilyBody: serif;
+//@fontFamilyBody: serif;
 
 html {
     overflow-y: scroll;
@@ -16,5 +16,12 @@ body {
     padding: 0;
     padding-top: 2em;
     color: @colorBody;
-    font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
 }
+
+img {
+    max-width: 100%;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

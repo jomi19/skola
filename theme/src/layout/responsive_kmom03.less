@@ -1,0 +1,83 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 1500px) {
+
+    .region-flash img {
+        width: 90%;
+    }
+
+    .rm-max.rm-navbar {
+        top: 16px;
+        right: 24px;
+    }
+
+    .inner-wrap {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .wrap-all {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .site-logo {
+        display: none;
+    }
+    .my-navbar {
+        font-size: 1em;
+        line-height: 2.5;
+    }
+
+
+}
+@media screen and (max-width: 950px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.push(1);
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .my-navbar {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    .region-sidebar-left,
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+
+    .region-main.has-sidebar-right,
+    .region-main.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .region-sidebar-left {
+        display: none;
+    }
+    .region-sidebar-right {
+        display: none;
+    }
+    .region-main.has-sidebar-left,
+    .region-main.has-sidebar-right {
+        width: 90%;
+    }
+}

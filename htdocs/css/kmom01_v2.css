@@ -32,12 +32,6 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-/* Poor-mans normalize */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 html {
   overflow-y: scroll;
   background-color: #181733;
