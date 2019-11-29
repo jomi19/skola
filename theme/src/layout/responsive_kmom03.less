@@ -33,8 +33,9 @@
         display: none;
     }
     .my-navbar {
-        font-size: 1em;
-        line-height: 2.5;
+        @font-size: 1 * @fontSizeBody;
+        font-size: @font-size;
+        line-height: (unit(@magicNumber) / unit(@font-size)) + 1;
     }
 
 
@@ -69,15 +70,3 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .region-sidebar-left {
-        display: none;
-    }
-    .region-sidebar-right {
-        display: none;
-    }
-    .region-main.has-sidebar-left,
-    .region-main.has-sidebar-right {
-        width: 90%;
-    }
-}

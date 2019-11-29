@@ -1,10 +1,10 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
- *
- * This stylesheet is for the design course and kmom03. Its intention is to
- * use kmom01.css and lessify the style and use this as a wrapper for the new
- * style.
- */
+* LESS version of the stylesheet for design kmom03.
+*
+* This stylesheet is for the design course and kmom03. Its intention is to
+* use kmom01.css and lessify the style and use this as a wrapper for the new
+* style.
+*/
 /**
 *Import mixins
 */
@@ -5122,9 +5122,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
 }
 .my-navbar {
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 24px;
   line-height: 1;
+  text-align: center;
 }
 .rm-default li {
   display: inline-block;
@@ -5157,14 +5157,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .region-breadcrumb li a {
   text-decoration: none;
 }
-.region-breadcrumb.breadcrumb-list {
-  font-size: 12.32px;
+.region-breadcrumb .breadcrumb-list {
+  font-size: 12px;
+  line-height: 2;
 }
-.region-breadcrumb.breadcrumb-list ul {
+.region-breadcrumb .breadcrumb-list ul {
   padding: 0;
   margin: 0;
 }
-.region-breadcrumb.breadcrumb-list ul a {
+.region-breadcrumb .breadcrumb-list ul a {
   color: #333;
 }
 .region-main {
@@ -5174,6 +5175,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 8.85416667%;
+  margin-bottom: 72px;
 }
 .region-main p {
   margin-bottom: 24px;
@@ -5269,6 +5271,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  text-align: center;
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
@@ -5610,7 +5613,7 @@ hr::after {
     display: none;
   }
   .my-navbar {
-    font-size: 1em;
+    font-size: 16px;
     line-height: 2.5;
   }
 }
@@ -5652,18 +5655,6 @@ hr::after {
     width: 98.95833333%;
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .region-sidebar-left {
-    display: none;
-  }
-  .region-sidebar-right {
-    display: none;
-  }
-  .region-main.has-sidebar-left,
-  .region-main.has-sidebar-right {
-    width: 90%;
   }
 }
 /**

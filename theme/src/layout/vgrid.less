@@ -72,9 +72,10 @@
 .my-navbar {
     // width: 100%;
     // padding: 1em;
-    font-size: 1.5em;
+    @font-size: 1.5 * @fontSizeBody;
+        font-size: @font-size;
+        line-height: (unit(@magicNumber) / unit(@font-size));
     text-align: center;
-    line-height: 1;
     & li {
     // display: inline;
     // padding: 2px 10px;
@@ -120,8 +121,10 @@
         }
         
     }
-    &.breadcrumb-list {
-        font-size: 0.77 * @fontSizeBody;
+    & .breadcrumb-list {
+        @font-size: 0.75 * @fontSizeBody;
+        font-size: @font-size;
+        line-height: (unit(@magicNumber) / unit(@font-size));
         & ul {
             padding: 0;
             margin: 0;    
@@ -138,6 +141,7 @@
 .region-main {
     #desinax-vgrid.column(@columns * 3 / 4);
     #desinax-vgrid.push(2);
+    margin-bottom: @magicNumber * 3;
     & p {
         margin-bottom: @magicNumber;
     }
@@ -231,6 +235,7 @@
 
 .site-footer {
     #desinax-vgrid.column(@columns);
+    text-align: center;
 }
 
 // .region-footer>.block {
