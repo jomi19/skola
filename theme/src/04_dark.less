@@ -1,0 +1,86 @@
+/*!
+* LESS version of the stylesheet for design kmom04.
+*
+* This stylesheet is for the design course and kmom04. Its intention is to
+* use kmom04.css and lessify the style and use this as a wrapper for the new
+* style.
+*/
+
+/**
+*Import mixins
+*/
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+@import "module/dark.less";
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu04.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/*
+* Import typohrapghic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid04.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/basekmom04.less";
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+@import "layout/responsive_kmom04.less";
+@import "layout/regions04.less"; // To add style for ?regions
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+//Fonts
+@fontFamilyHeadings: @fontFamilyVerdana;
+@fontFamilyBody: @fontFamilyHelveticaNeue;
+@fontFamilyCode: @fontFamilyCourier;
+
+// Font size and magic number
+@magicNumber: 24px;
+@fontSizeBody: 16px;
+
+// Default grid, change to fit your requirements.
+@columnWidth: 30;
+@gutterWidth: 10;
+@columns: 24;
+@gridType: "float"; // "flex"

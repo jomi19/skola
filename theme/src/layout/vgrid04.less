@@ -16,7 +16,7 @@
 }
 
 .wrap-all {
-    background-color: white;
+    background-color: @bgColorBody;
     width: 90%;
     margin: 0 auto;
 }
@@ -77,6 +77,10 @@
     }
 }
 
+#rm-menu {
+    background-color: @bgColorBody;
+    color: @colorBody;
+}
 .rm-default li {
     display: inline-block;
 }
@@ -85,11 +89,11 @@
     display: list-item;
 }
 
-// .rm-max.rm-navbar {
-// 	position: absolute;
-// top: 45px;
-// right: 96px;
-// }
+.rm-max.rm-navbar {
+    position: absolute;
+    top: 45px;
+    right: 96px;
+}
 .region-flash {
     #desinax-vgrid.column(@columns);
 }
@@ -185,8 +189,14 @@
 }
 
 .wrap-sidebar .block h4 {
-    border-top: 1px solid #ccc;
-    background-image: linear-gradient(to right, #fff, #ccc);
+    color: @accentFontColor;
+    // border-top: 1px solid #ccc;
+    background-image: linear-gradient(to right, @bgColorBody, @accentBgColor);
+}
+
+.wrap-sidebar .a {
+    text-decoration: none;
+    color: @accentFontColor;
 }
 
 .toc {
