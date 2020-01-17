@@ -4733,6 +4733,20 @@ template {
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFcWbQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
 /**
  * A responsive menu.
  */
@@ -5307,7 +5321,7 @@ body {
   padding: 0;
   padding-top: 2em;
   color: #276688;
-  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 "Source Sans Pro", sans-serif;
 }
 img {
   max-width: 100%;
@@ -5318,7 +5332,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Noto Serif', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5683,6 +5697,12 @@ hr::after {
 .regions .inner-wrap {
   background-color: #f4e0e9;
   border: 1px solid #d995b4;
+}
+.highlight {
+  color: #D68D35;
+}
+.rm-max .rm-small .rm-button {
+  color: #D68D35;
 }
 /**
  * My own settings, not currently in their own module.

@@ -5307,7 +5307,7 @@ body {
   padding: 0;
   padding-top: 2em;
   color: #7D7C91;
-  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 "Source Sans Pro", sans-serif;
 }
 img {
   max-width: 100%;
@@ -5318,7 +5318,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Noto Serif', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5683,6 +5683,12 @@ hr::after {
 .regions .inner-wrap {
   background-color: #f4e0e9;
   border: 1px solid #d995b4;
+}
+.highlight {
+  color: #A69D7D;
+}
+.rm-max .rm-small .rm-button {
+  color: #A69D7D;
 }
 /**
  * My own settings, not currently in their own module.
