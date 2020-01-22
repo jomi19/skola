@@ -1,0 +1,55 @@
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+figure.figure {
+    @maxContentWidth: 1100px;
+    #desinax-figure.figure(@maxContentWidth);
+}
+
+.figure {
+
+
+    & img {
+        position: relative;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    & figcaption {
+        margin-top: - 2em;
+        top: 0;
+        & p {
+            background-color: #276688;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+            color: #FFD7A7;
+            bottom: 12px;
+            position: relative;
+            text-align: center;
+            opacity: 0.3;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+    &:hover {
+        p {
+            opacity: 1;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+        }
+        img {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+        }
+    }
+
+}

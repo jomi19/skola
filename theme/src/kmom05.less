@@ -10,6 +10,10 @@
 *Import mixins
 */
 @import "mixin/clearfix.less";
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
 
 .clearfix() {
     #design-mixin.clearfix();
@@ -28,7 +32,7 @@
 @import "@fortawesome/fontawesome-free/less/fontawesome.less";
 @import "@fortawesome/fontawesome-free/less/solid.less";
 @import "@fortawesome/fontawesome-free/less/brands.less";
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif|Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Source+Sans+Pro&display=swap');
 
 /**
  * A responsive menu.
@@ -47,6 +51,8 @@
 */
 @import "@desinax/vertical-grid/less/grid.less";
 @import "layout/vgrid04.less";
+
+@import "module/blogg.less";
 
 // Show the grid
 .hgrid .inner-wrap {
@@ -70,7 +76,8 @@
 /**
  * My own settings, not currently in their own module.
  */
-
+// Enable style from the module and optinally add customized layout
+@import "module/figure.less";
 //Fonts
 @fontFamilyBody: "Source Sans Pro", sans-serif;
 @fontFamilyHeadings: 'Noto Serif', serif;
