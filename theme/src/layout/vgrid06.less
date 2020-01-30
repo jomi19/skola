@@ -1,0 +1,251 @@
+/**
+ * Layout using vgrid
+ * 
+ */
+
+/**
+ * Variables
+ */
+
+/**
+ * General layout
+ */
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+.wrap-all {
+    background-color: @bgColorBody;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+    // margin: auto;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(95%);
+}
+
+//  .inner-wrap {
+// width: 80%;
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+// Header
+
+.site-logo img {
+    display: none;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(3);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(18);
+}
+
+// .region-header-col-1 {
+//     background-color: #9FC3D6;
+//     & ::after {
+//         background-color: #9FC3D6;
+//         position: absolute;
+//         transform-origin: bottom left;
+//         transform: skew(-20deg, 0deg)
+//     }
+// }
+
+// .row::after {
+//     clear: both;
+//     overflow: auto;
+// }
+
+//navbar
+.my-navbar {
+    // width: 100%;
+    // padding: 1em;
+    @font-size: 1.5 * @fontSizeBody;
+    font-size: @font-size;
+    line-height: (unit(@magicNumber) / unit(@font-size));
+    text-align: center;
+    & li {
+        // display: inline;
+        // padding: 2px 10px;
+    }
+}
+
+#rm-menu {
+    background-color: @bgColorBody;
+    color: @colorBody;
+}
+.rm-default li {
+    display: inline-block;
+}
+
+.rm-mobile li {
+    display: list-item;
+}
+
+.rm-max.rm-navbar {
+    position: absolute;
+    top: 45px;
+    right: 96px;
+}
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.outer-wrap-flash {
+    border-bottom: 5px dashed @bgColorHtml;
+}
+
+// .region-flash {
+//
+// }
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+    padding: 0;
+
+    & li {
+        list-style-type: none;
+        display: inline;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+    & .breadcrumb-list {
+        @font-size: 0.75 * @fontSizeBody;
+        font-size: @font-size;
+        line-height: (unit(@magicNumber) / unit(@font-size));
+        & ul {
+            padding: 0;
+            margin: 0;
+            & a {
+                color: @colorBody;
+            }
+        }
+    }
+}
+
+//Main
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(2);
+    margin-bottom: @magicNumber * 3;
+    & p {
+        margin-bottom: @magicNumber;
+    }
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+    &.has-sidebar-left {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+        #desinax-vgrid.push(1);
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.push(1);
+        #desinax-vgrid.column(@columns * 2 / 4 );
+    }
+}
+
+.next-previous {
+    & .next {
+        float: right;
+    }
+    & .previous {
+        float: left;
+    }
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4);
+
+    & .block {
+        margin-bottom: @magicNumber * 3;
+    }
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.push(1);
+}
+
+.wrap-sidebar .block h4 {
+    color: @accentFontColor;
+    // border-top: 1px solid #ccc;
+    background-image: linear-gradient(to right, @bgColorBody, @accentBgColor);
+}
+
+.wrap-sidebar .a {
+    text-decoration: none;
+    color: @accentFontColor;
+}
+
+.toc {
+    list-style-type: none;
+    padding: 0;
+}
+
+//Footer
+.outer-wrap-footer {
+    background-color: @bgColorBody;
+    border-top: 5px solid @bgColorHtml;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+    //     width: 33%;
+    //     float: left;
+    // text-align: center;
+    //     border-collapse: collapse;
+}
+
+.footer-column-1,
+.footer-column-2 {
+    border-right: 3px solid @bgColorHtml;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: @bgColorHtml;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    text-align: center;
+}
+
+// .region-footer>.block {
+//     margin-top: 2em;
+//     padding: 30px;
+//     width: 100%;
+//     text-align: center;
+// }

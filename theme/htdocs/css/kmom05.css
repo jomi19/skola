@@ -1,7 +1,7 @@
 /*!
-* LESS version of the stylesheet for design kmom04.
+* LESS version of the stylesheet for design kmom05.
 *
-* This stylesheet is for the design course and kmom04. Its intention is to
+* This stylesheet is for the design course and kmom05. Its intention is to
 * use kmom04.css and lessify the style and use this as a wrapper for the new
 * style.
 */
@@ -5360,8 +5360,8 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #666;
-  margin-bottom: 23px;
+  border-bottom: 3px solid #276688;
+  margin-bottom: 21px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -5378,8 +5378,8 @@ h2 {
   font-size: 1.875em;
   line-height: 1.6;
   font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #CCC;
+  margin-bottom: 22px;
+  border-bottom: 2px solid #276688;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -5388,8 +5388,8 @@ h3 {
   font-size: 1.75em;
   line-height: 1.71428571;
   font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  margin-bottom: 22px;
+  border-bottom: 2px solid #276688;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -5399,7 +5399,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #276688;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -5408,7 +5408,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #276688;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -5417,7 +5417,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #276688;
 }
 p {
   margin-bottom: 24px;

@@ -1,0 +1,26 @@
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+//@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    background-image: url("../img/theme/45-degree-fabric-light.png");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+    color: @colorBody;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+img {
+    max-width: 100%;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
